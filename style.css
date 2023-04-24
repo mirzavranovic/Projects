@@ -1,0 +1,112 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    background-color: white;
+    height: 100vh;
+    padding-top: 1px;
+}
+
+.title {
+    color: #00a9a1;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.display {
+    color: #00a9a1;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide{
+    display:none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+
+.box {
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+
+    .box:nth-child(3n) {
+        border-right: none;
+    }
+
+    .box:nth-child(6) ~ .box {
+        border-bottom: none;
+    }
+
+.playerX {
+    color: #00a9a1;
+}
+
+.playerO {
+    color: black;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+    .controls button {
+        color: white;
+        padding: 8px;
+        border-radius: 8px;
+        border: none;
+        font-size: 20px;
+        margin-left: 15px;
+        margin-bottom: 3em;
+        cursor: pointer;
+    }
+
+
+#reset {
+    background-color: black;
+}
+
+    #reset:hover {
+        cursor: pointer;
+        transform: translateY(-2px);
+    }
+
+#computer {
+    background-color: black;
+}
+
+    #computer:hover {
+        cursor: pointer;
+        transform: translateY(-2px);
+    }
+
+#human {
+    background-color: black;
+}
+
+    #human:hover {
+        cursor: pointer;
+        transform: translateY(-2px);
+    }
